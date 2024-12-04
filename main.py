@@ -4,8 +4,6 @@ import rpy2.robjects as ro
 import os
 from predict import get_predictions
 
-print(os.getcwd())  # Ensure it matches the expected directory
-
 app = FastAPI()
 
 # Define input data structure
