@@ -1,4 +1,4 @@
-# Predicting Lemurs API
+# Predicting Lemurs API (Not Live)
 
 The API is hosted on Heroku and can be accessed at the following URL: https://lemur-predictions-5a0eb4f74f1f.herokuapp.com
 
@@ -31,3 +31,15 @@ You should expect to see predictions in the following manner
     }
 }
 ```
+
+# Heroku Error
+
+Unfortunately, the API is not live at the moment. Making R run on heroku is a bit of a challenge and I am still working on it. I am trying to use [this buildpack](https://github.com/virtualstaticvoid/heroku-buildpack-r) to make it work, however Heroku is throwing an error of `App not compatible with buildpack`.
+
+# Structure
+
+The API is structured in the following manner:
+
+- `app.py`: The main file that contains the API code. 
+- `predict.py`: This file contains the code for making predictions. It opens the model file using `rpy2` library and makes predictions.
+- `test_api.py` contains a simple test for the API. It sends a POST request to the API and checks if the response is as expected.
