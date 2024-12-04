@@ -1,6 +1,6 @@
 # Predicting Lemurs API (Not Live)
 
-The API is hosted on Heroku and can be accessed at the following URL: https://lemur-predictions-5a0eb4f74f1f.herokuapp.com
+This repository contains the api for the model created in the paper [Lifespan Analysis of Lemurs in Wild and Captive Environments](https://github.com/khushaal-nandwani/predicting-lemurs). The API is hosted on Heroku and can be accessed at the following URL: https://lemur-predictions-5a0eb4f74f1f.herokuapp.com
 
 To make predictions of lemur in wild and captive, please send a POST request to the URL 
 ```https://lemur-predictions-5a0eb4f74f1f.herokuapp.com/predict``` 
