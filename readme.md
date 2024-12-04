@@ -43,3 +43,19 @@ The API is structured in the following manner:
 - `app.py`: The main file that contains the API code. 
 - `predict.py`: This file contains the code for making predictions. It opens the model file using `rpy2` library and makes predictions.
 - `test_api.py` contains a simple test for the API. It sends a POST request to the API and checks if the response is as expected.
+
+
+# Running in Local
+
+To run the API in local, please install the required libraries using the following command:
+
+```bash
+pip install -r requirements.txt
+```
+
+Then run the following command:
+
+```bash
+uvicorn app:app --reload
+```
+
