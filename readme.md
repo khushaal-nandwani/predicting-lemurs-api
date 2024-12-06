@@ -1,4 +1,4 @@
-# Predicting Lemurs API (Not Live)
+# Predicting Lemurs API
 
 This repository contains the api for the model created in the paper [Lifespan Analysis of Lemurs in Wild and Captive Environments](https://github.com/khushaal-nandwani/predicting-lemurs). The API is hosted on AWS EC2 instance.
 
