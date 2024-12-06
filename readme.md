@@ -1,9 +1,14 @@
 # Predicting Lemurs API (Not Live)
 
-This repository contains the api for the model created in the paper [Lifespan Analysis of Lemurs in Wild and Captive Environments](https://github.com/khushaal-nandwani/predicting-lemurs). The API is hosted on Heroku and can be accessed at the following URL: https://lemur-predictions-5a0eb4f74f1f.herokuapp.com
+This repository contains the api for the model created in the paper [Lifespan Analysis of Lemurs in Wild and Captive Environments](https://github.com/khushaal-nandwani/predicting-lemurs). The API is hosted on AWS EC2 instance.
+
+There is a frontend available for this API which is on [this site](http://3.99.183.165:5173) and the code for the frontend can be found in [this repo](https://github.com/khushaal-nandwani/predicting-lemurs-frontend).
+
 
 To make predictions of lemur in wild and captive, please send a POST request to the URL 
-```https://lemur-predictions-5a0eb4f74f1f.herokuapp.com/predict``` 
+
+```http://3.99.183.165:8000/predict```
+
 with the following JSON payload:
 
 ```json
@@ -11,10 +16,10 @@ with the following JSON payload:
   "data": {
         "animal_id": ["0002", "0007", "0030", "0046"],
         "sex": ["M", "M", "F", "M"],
-        "birth_type": ["wild", "wild", "wild", "wild"],
+        "birth_type": ["wild", "wild", "wild", "wild"], 
         "genus": ["O", "O", "E", "H"],
         "species": ["GG", "GG", "COL", "GG"],
-        "age": [3.93, 7.55, 5.55, 1.50],
+        "age": [3.93, 7.55, 5.55, 1.50], 
         "month_born": ["Jan", "Jan", "Oct", "Dec"]
     }
 }
@@ -56,6 +61,6 @@ pip install -r requirements.txt
 Then run the following command:
 
 ```bash
-uvicorn app:app --reload
+uvicorn main:app --host=0.0.0.0 --port=8000
 ```
 

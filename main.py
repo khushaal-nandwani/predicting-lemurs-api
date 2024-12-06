@@ -19,7 +19,7 @@ app.add_middleware(
 class PredictionRequest(BaseModel):
     data: dict
 
-REQUIRED_COLUMNS = ["animal_id", "sex", "birth_type", "genus", "species", "age", "month_born"]
+REQUIRED_COLUMNS = ["animal_id", "sex", "genus", "species", "month_born"]
 
 @app.post("/predict")
 async def predict(request: PredictionRequest):
