@@ -35,10 +35,6 @@ You should expect to see predictions in the following manner
 }
 ```
 
-# Heroku Error
-
-Unfortunately, the API is live but does not run at the moment. This is because making R run on heroku is a bit of a challenge and I am still working on it. I am trying to use [this buildpack](https://github.com/virtualstaticvoid/heroku-buildpack-r) to make it work, however Heroku is throwing an error of `App not compatible with buildpack`.
-
 # Structure
 
 The API is structured in the following manner:
